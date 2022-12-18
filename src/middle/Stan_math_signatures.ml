@@ -112,7 +112,6 @@ let (manual_stan_math_signatures : (string, signature list) Hashtbl.t) =
   String.Table.create ()
 
 (** The variadic signatures hash table
-
     These functions cannot be overloaded.
 *)
 let (stan_math_variadic_signatures : (string, variadic_signature) Hashtbl.t) =
@@ -294,6 +293,8 @@ let distributions =
   ; (full_lpdf_depr, "von_mises", [DVReal; DVReal; DVReal], SoA)
   ; (full_lpdf_depr, "weibull", [DVReal; DVReal; DVReal], SoA)
   ; ([Lpdf; Log], "wiener", [DVReal; DVReal; DVReal; DVReal; DVReal], SoA)
+  ; ([Lpdf], "wiener_full", [DReal; DReal; DReal; DReal; DReal; DReal; DReal; DReal], SoA)
+  ; ([Lpdf], "wiener_full_prec", [DReal; DReal; DReal; DReal; DReal; DReal; DReal; DReal; DReal], SoA)
   ; ([Lpdf], "wishart_cholesky", [DMatrix; DReal; DMatrix], SoA)
   ; ([Lpdf; Log], "wishart", [DMatrix; DReal; DMatrix], SoA) ]
 
