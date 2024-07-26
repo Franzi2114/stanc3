@@ -292,9 +292,7 @@ let distributions =
   ; (full_lpdf_depr, "uniform", [DVReal; DVReal; DVReal], SoA)
   ; (full_lpdf_depr, "von_mises", [DVReal; DVReal; DVReal], SoA)
   ; (full_lpdf_depr, "weibull", [DVReal; DVReal; DVReal], SoA)
-  ; ([Lpdf; Log], "wiener", [DVReal; DVReal; DVReal; DVReal; DVReal], SoA)
-  ; ([Lpdf], "wiener_full", [DReal; DReal; DReal; DReal; DReal; DReal; DReal; DReal], SoA)
-  ; ([Lpdf], "wiener_full_prec", [DReal; DReal; DReal; DReal; DReal; DReal; DReal; DReal; DReal], SoA)
+  ; ([Lpdf; Ccdf; Cdf], "wiener", [DReal; DReal; DReal; DReal; DReal; DReal; DReal; DReal], SoA)
   ; ([Lpdf], "wishart_cholesky", [DMatrix; DReal; DMatrix], SoA)
   ; ([Lpdf; Log], "wishart", [DMatrix; DReal; DMatrix], SoA) ]
 
